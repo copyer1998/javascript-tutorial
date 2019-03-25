@@ -14,16 +14,38 @@
   <link rel="stylesheet" href="https://cdn.bootcss.com/docsify/4.9.1/themes/buble.css" title="buble" disabled="" />
   <link rel="stylesheet" href="https://cdn.bootcss.com/docsify/4.9.1/themes/pure.css" title="pure" disabled="" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
-    title="docsify-themeable" disabled="disabled" />
+    title="docsify-themeable" disabled="disabled" /><link href="https://cdn.bootcss.com/intro.js/2.9.3/introjs.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <div id="app">加载中:100:</div>
 
+  <nav class="app-nav no-badge">
+    <ul>
+      <li id="tohome"  data-intro='Hello step one!'>基础<ul>
+          <li><a href="#/README" >回到主页</a></li>
+       
+        </ul>
+      </li>
+      <li id='config'>配置<ul>
+          <li><a href="#/configuration">配置项</a></li>
+          <li><a href="#/themes">主题</a></li>
+          <li><a href="#/plugins">使用插件</a></li>
+          <li><a href="#/markdown">Markdown 配置</a></li>
+          <li><a href="#/language-highlight">代码高亮</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div id="app">加载中:100:</div>
+<script src="https://cdn.bootcss.com/intro.js/2.9.3/intro.min.js"></script>
   <script>
+    introJs("#tohome").addHints();
+    introJs("#tohome").start();
+    // introJs("#config").nextStep();
+    // introJs("#config").goToStep(2).start();
     window.$docsify = {
-      loadNavbar: true,
-      loadNavbar: "_navbar.md",
+      // loadNavbar: true,
+      // loadNavbar: "_navbar.md",
       loadSidebar: true,
       loadSidebar: "SUMMARY.md",
 
@@ -65,6 +87,7 @@
       executeScript: true
     };
   </script>
+  
   <script src="https://cdn.bootcss.com/docsify/4.9.1/docsify.min.js"></script>
   <!-- <script src="//unpkg.com/docsify-copy-code@2"></script> -->
   <script src="//lib.baomitu.com/docsify/4.9.1/plugins/emoji.min.js"></script>
@@ -72,7 +95,7 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2.1.0/dist/docsify-copy-code.min.js"></script>
   <script src="https://cdn.bootcss.com/docsify/4.9.1/plugins/emoji.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2.3.5/dist/docsify-pagination.min.js"></script>
-  <script src="//cdn.bootcss.com/docsify/4.9.1/plugins/search.js"></script>
+  <!-- <script src="//cdn.bootcss.com/docsify/4.9.1/plugins/search.js"></script> -->
 </body>
 
 </html>

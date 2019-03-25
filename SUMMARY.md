@@ -8,7 +8,7 @@
 *  数据类型
 
    * [概述](types/general.md)
-   * [null,undefined和布尔值](types/null*undefined*boolean.md)
+   * [null,undefined和布尔值](types/null-undefined-boolean.md)
    * [数值](types/number.md)
    * [字符串](types/string.md)
    * [函数](types/function.md)
@@ -94,7 +94,7 @@
    * [IndexDB对象](bom/indexeddb.md)
    * [Location对象](bom/location.md)
    * [Navigator对象](bom/navigator.md)
-   * [同源限制](bom/same*origin.md)
+   * [同源限制](bom/same-origin.md)
    * [Storage接口](bom/storage.md)
    * [webworker](bom/webworker.md)
    * [window对象](bom/window.md)
